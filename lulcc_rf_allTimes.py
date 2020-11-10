@@ -154,7 +154,7 @@ info = randForest.explain()
 validated = validation.classify(randForest)
 valAccuracy = validated.errorMatrix('valClass', 'classification')
 
-results2015 = 'final_2015_results_300-3.json'
+results2015 = 'results/final_2015_results_300-3.json'
 colNames = ['Run', 'NumTrees', 'VarPerNode', 'ResubMatrix', 'TrainAcc', 'Importance', 'OOB_Error', 'Val_Acc',
             'Val_Matrix']
 df = {'runs': []}
@@ -306,7 +306,7 @@ validation00 = valStack00.stratifiedSample(numPoints=450, classBand='valClass', 
 validated00 = validation00.classify(randForest)
 valAccuracy00 = validated00.errorMatrix('valClass', 'classification')
 
-results2000 = 'final_2000_results_300-3.json'
+results2000 = 'results/final_2000_results_300-3.json'
 colNames = ['Run', 'NumTrees', 'VarPerNode', 'ResubMatrix', 'TrainAcc', 'Importance', 'OOB_Error', 'Val_Acc',
             'Val_Matrix']
 df00 = {'runs': []}
@@ -434,7 +434,7 @@ validation85 = valStack85.stratifiedSample(numPoints=450, classBand='valClass', 
 validated85 = validation85.classify(randForest)
 valAccuracy85 = validated85.errorMatrix('valClass', 'classification')
 
-results1985 = 'final_1985_results_300-3.json'
+results1985 = 'results/final_1985_results_300-3.json'
 colNames = ['Run', 'NumTrees', 'VarPerNode', 'ResubMatrix', 'TrainAcc', 'Importance', 'OOB_Error', 'Val_Acc',
             'Val_Matrix']
 df85 = {'runs': []}

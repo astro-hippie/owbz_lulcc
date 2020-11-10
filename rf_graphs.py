@@ -17,17 +17,17 @@ def JulianDate_to_MMDD(y, jd):
         month = month + 1
     return "{}-{}".format(month, jd)
 
-file = pd.read_csv('all2015_results_20200602.csv')
-var1 = pd.read_csv('sensitivity_1var.csv')
-var5 = pd.read_csv('sensitivity_5var.csv')
-tree25 = pd.read_csv('sensitivity_25trees.csv')
-tree50 = pd.read_csv('sensitivity_50trees.csv')
-tree100 = pd.read_csv('sensitivity_100trees.csv')
-tree200 = pd.read_csv('sensitivity_200trees.csv')
-tree300 = pd.read_csv('sensitivity_300trees.csv')
-tree400 = pd.read_csv('sensitivity_400trees.csv')
-tree500 = pd.read_csv('sensitivity_500trees.csv')
-tree600 = pd.read_csv('sensitivity_600trees.csv')
+file = pd.read_csv('results/all2015_results_20200602.csv')
+var1 = pd.read_csv('results/sensitivity_1var.csv')
+var5 = pd.read_csv('results/sensitivity_5var.csv')
+tree25 = pd.read_csv('results/sensitivity_25trees.csv')
+tree50 = pd.read_csv('results/sensitivity_50trees.csv')
+tree100 = pd.read_csv('results/sensitivity_100trees.csv')
+tree200 = pd.read_csv('results/sensitivity_200trees.csv')
+tree300 = pd.read_csv('results/sensitivity_300trees.csv')
+tree400 = pd.read_csv('results/sensitivity_400trees.csv')
+tree500 = pd.read_csv('results/sensitivity_500trees.csv')
+tree600 = pd.read_csv('results/sensitivity_600trees.csv')
 
 # print(var1['OOB_Error'])
 oobAcc_1var = [(1-x)*100 for x in var1['OOB_Error']]
@@ -84,14 +84,14 @@ ax2.grid()
 fig.set_size_inches(12.5, 5, forward=True)
 fig.tight_layout()
 fig.show()
-plt.savefig('combined_sensitivity.pdf', dpi=500)
+plt.savefig('results/combined_sensitivity.pdf', dpi=500)
 
 
 
 # NDVI and precip plot
 fig, (ax1, ax2) = plt.subplots(2)
 
-ndvi_csv = pd.read_csv("ndvi_timeseries_trainFC.csv")
+ndvi_csv = pd.read_csv("results/ndvi_timeseries_trainFC.csv")
 dayrange = np.arange(1, 366, 1)
 # doy_labels = [JulianDate_to_MMDD(2015, day) for day in dayrange]
 new_labels = [date for date in dayrange if (date-1) % 30 == 0]
@@ -117,7 +117,7 @@ ax1.grid()
 ax1.legend(bbox_to_anchor=(1,1), loc=4, ncol=2, frameon=False, fontsize=12, facecolor='white')
 # fig.show()
 
-precip_csv = pd.read_csv("ow_gsmap_mean.csv")
+precip_csv = pd.read_csv("results/ow_gsmap_mean.csv")
 ax2.bar(precip_csv['doy'], precip_csv['hourlyPrecipRateGC_mean'], color='blue')
 ax2.set_xticks(np.arange(1, 366, 30))
 ax2.set_xlim([1, 366])

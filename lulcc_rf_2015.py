@@ -12,7 +12,7 @@ import ee
 ee.Initialize()
 
 # save the results here
-result_path = "all2015_results.csv"
+result_path = "results/all2015_results.csv"
 # list all trees and var/node we want to test
 treeList = [1, 25, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600]
 varNodeList = [1, 2, 3, 4, 5]
