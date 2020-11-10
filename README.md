@@ -1,6 +1,6 @@
 # owbz_lulcc
 Author: Colin Doyle
-2020/11/10
+Date: 2020/11/10
 
 Analysis for land-use land-cover change study from Doyle et al., 2020. These scripts were used to generate a random forest algorithm to map land-use and land-cover in Orange Walk, Belize for 3 time periods using Google Earth Engine.
 
