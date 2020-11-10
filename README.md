@@ -6,7 +6,7 @@ Analysis for land-use land-cover change study from Doyle et al., 2020. These scr
 
 `lulcc_rf_2015.py` runs the experiment to optimize the random forest number of trees and number of variable per split parameters. Results saved as a csv containing all of the accuracy metrics and confusion matrices for every combination of parameters.
 
-`lulcc_rf_allTimes.py` runs the random forest algorithm with a defined number of trees and variables per split. This runs the final results used in the paper, classifying all 3 time periods and saving results for 10 classes, 9 classes, and 8 classes. The 9 class results are not mentioned in the manuscript. The results are saved as json files, 1 file for each time period contained the accruacy metrics and confusion matrices for all 3 class combinations. 
+`lulcc_rf_allTimes.py` runs the random forest algorithm with a defined number of trees and variables per split. This runs the final results used in the paper, classifying all 3 time periods and saving results for 10 classes, 9 classes, and 8 classes. The 9 class results are not mentioned in the manuscript. The results are saved as json files, 1 file for each time period contained the accruacy metrics and confusion matrices for all 3 class combinations. This script also exports the final resulting maps as GeoTiffs to your Google Drive.
 
 `rf_graphs.py` contains the code used to generate the sensitivity analysis plot in the manuscript as well as the NDVI and precipitation time series graphs in the manuscript.
 
