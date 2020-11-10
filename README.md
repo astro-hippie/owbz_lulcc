@@ -12,4 +12,4 @@ Analysis for land-use land-cover change study from Doyle et al., 2020. These scr
 
 All of the csv and json files are the results exported from these Python scripts, as well as organized into various ways for plotting the results. 
 
-You can recreate the environment used to run these scripts with the packages in the requirements.txt file.
+You can recreate the environment used to run these scripts with the packages in the `requirements.txt` file.
