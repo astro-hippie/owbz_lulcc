@@ -2,7 +2,7 @@
 Author: Colin Doyle
 2020/11/10
 
-Analysis for land-use land-cover change study from Doyle et al., 2020. These scripts were used to generate a random forest algorithm to map land-use and land-cover in Orange Walk, Belize for 3 time periods using Google Earth Engine.
+Analysis for land-use land-cover change study from Doyle et al., 2021 in Remote Sensing. These scripts were used to generate a random forest algorithm to map land-use and land-cover in Orange Walk, Belize for 3 time periods using Google Earth Engine.
 
 `lulcc_rf_2015.py` runs the experiment to optimize the random forest number of trees and number of variable per split parameters. Results saved as a csv containing all of the accuracy metrics and confusion matrices for every combination of parameters.
 
