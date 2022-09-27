@@ -17,7 +17,7 @@ httplib2shim==0.0.3
 idna==2.9
 kiwisolver==1.2.0
 matplotlib==3.2.1
-numpy==1.18.2
+numpy==1.22.0
 pandas==1.0.3
 plotly==4.8.1
 protobuf==3.11.3
